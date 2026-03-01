@@ -3,7 +3,9 @@ import { useLocation, useNavigate } from "react-router-dom"
 export default function Login( {onLogin} ){
     const navigate = useNavigate()
     const location = useLocation()
-    const from = location.state?.from?.pathname || "/home";
+    
+    const from = location.state?.from?.pathname || "/dashboard";
+
     function handleLogin() {
     onLogin(); // set isAuth = true
     navigate(from, { replace: true }); // prevent going back to login
