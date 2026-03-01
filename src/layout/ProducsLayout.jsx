@@ -5,7 +5,7 @@ export default function Layout({ isAuth }){
     return (
         <div>
             <Navbar isAuth={isAuth}></Navbar>
-            <div className="container">
+            <div className="container py-4">
                 <Outlet />
             </div>
         </div>
