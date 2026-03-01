@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 export default function Home(){
     return (
         <div className="container mt-5">
@@ -6,6 +7,7 @@ export default function Home(){
                 <p className="lead">
                     Browse products and view detailed information.
                 </p>
+                <Link to="/products" className="btn btn-primary btn-sm">Products</Link>
             </div>
         </div>
     )

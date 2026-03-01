@@ -1,81 +1,96 @@
-# React Router v7 — Product Catalog (Multi-Page Application)
+# 🛍️ Product Catalog
 
-## Overview
+A React multi-page application built with React Router v7 that allows users to browse a collection of products and view detailed information for each item.
 
-This project is a multi-page **Product Catalog** application built with **React** and **React Router v7**. It demonstrates core routing concepts including dynamic routes, nested routes, layout routes, and programmatic navigation using modern React Router syntax.
+Users can navigate between pages, explore products in a structured layout, and access dynamic product details using URL parameters.
 
-The application allows users to browse a list of products and view detailed information for each item within a structured layout.
+![HomePageScreenshot](src/assets/home.png)
 
+## 🚀 Features
 
-## Features
-
-### 1. Application Routes
-
-The application includes the following routes:
-
-| Route           | Description                       |
-| --------------- | --------------------------------- |
-| `/`             | Home page                         |
-| `/products`     | Products layout with product list |
-| `/products/:id` | Dynamic product details page      |
-| `*`             | 404 Not Found page                |
+* Multi-page routing using React Router v7
+* Persistent navigation bar with active link styling
+* Nested routes with layout structure
+* Dynamic product details using URL parameters
+* Local product data (no external API required)
+* Minimum of 6 products with full details
+* “Back to Products” navigation
+* Professional 404 Not Found page
+* Handles invalid product IDs gracefully
 
 
+## 🛠️ Technologies Used
 
-### 2. Navigation
+* React
+* React Router v7
 
-* Persistent top navigation bar displayed on all pages
-* Implemented using `NavLink`
-* Active link styling for the current route
-
-### 3. Products Data
-
-* Local data array 
-* Each product includes:
-
-  * `id`
-  * `name`
-  * `price`
-  * `category`
-  * `description`
-
-### 4. Nested Routing Structure
-
-The `/products` route functions as a **layout route** that includes:
-
-* Page heading
-* Description or placeholder filter section
-* `<Outlet />` for nested route rendering
+  * `NavLink`
+  * `<Outlet />`
+  * `useParams()`
+  * `useNavigate()`
+* JavaScript (ES6+)
+* CSS Bootstap
+* Vite (development server)
 
 
 
-### 5. Product List Page
+## 🌐 Application Routes
 
-* Displays all products in a structured layout (grid or list)
-* Each product includes a **View Details** link
-* Navigates to `/products/:id`
+* **Home**
+  `/`
 
+* **Products (Layout + List)**
+  `/products`
 
+* **Product Details (Dynamic Route)**
+  `/products/:id`
 
-### 6. Product Details Page
+* **Home**
+  `/login`
 
-* Displays:
+* **Home**
+  `/dashboard`
 
-  * Name
-  * Price
-  * Category
-  * Description
-* Handles invalid IDs with:
+* **Not Found (404)**
+  `*`
 
-  * Professional “Product not found” message
-  * Navigation link back to `/products`
+---
 
+## 📦 Installation & Running the App
 
-## Technical Implementation
+1. Clone the repository:
 
-* Built with React
-* Uses React Router v7 
-* Organized project structure:
+   ```bash
+   git clone https://github.com/elhamatokhi/Product-Catalog.git
+   ```
+
+2. Navigate into the project folder:
+
+   ```bash
+   cd product-catalog
+   ```
+
+3. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open your browser and visit:
+
+   ```bash
+   http://localhost:5173
+   ```
+
+---
+
+## 📂 Project Structure
 
 ```
 src/
@@ -86,24 +101,16 @@ src/
  └── main.jsx
 ```
 
+---
 
-## Installation & Usage
-
-To run the application locally:
-
-```bash
-npm install
-npm run dev
-```
-
-The development server will start and the application will be accessible in the browser.
-
-
-## Author
+## 👤 Author
 
 **Elhama Tokhi**
 
+* GitHub: [@elhamatokhi](https://github.com/elhamatokhi)
 
-## License
+---
 
-This project is developed for educational purposes.
+## 📄 License
+
+This project is developed for educational purposes as part of a React Router v7 assignment.

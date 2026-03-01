@@ -26,6 +26,11 @@ export default function Navbar({ isAuth, onLogout }) {
               Dashboard
             </NavLink>
           </li>
+           <li className="nav-item">
+            <NavLink className={linkClass} to="/login">
+              Login
+            </NavLink>
+          </li>
         </ul>
         <span className="badge text-bg-secondary">
           {isAuth ? "Logged In" : "Logged out"}
