@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom"
 export default function Login( {onLogin} ){
     const navigate = useNavigate()
     const location = useLocation()
-    
+
     const from = location.state?.from?.pathname || "/dashboard";
 
     function handleLogin() {
@@ -12,7 +12,7 @@ export default function Login( {onLogin} ){
     }
 
     return (
-        <div>
+        <div className="container py-5">
             <h1>Login</h1>
             <p>Click here to authenticate</p>
 

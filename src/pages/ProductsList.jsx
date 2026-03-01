@@ -3,7 +3,7 @@ import products from "../data/products"
 
 export default function ProductsList(){
     return (
-        <div className="row">
+        <div className="row container py-5">
             {products.map(product => (
                 <div className="col-md-4 mb-4" key={product.id}>
                     <div className="card h-100 shadow-sm">
